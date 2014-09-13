@@ -14,7 +14,7 @@ class RotationMemberListTest < ActiveSupport::TestCase
   end
 
   test "unlisted user error" do
-  	rml = rotation_member_lists(:five)
+  	rml = rotation_member_lists(:rm_3)
   	assert_not User.find_by_id(rml.user_id), "unlisted user was found" 
   end
 

@@ -14,11 +14,17 @@ class UserTest < ActiveSupport::TestCase
   	 "Could not find rotations"
   	end
 
-  test "user events" do
+  test "user all events" do
   	usr = users(:one)
   	assert usr.events == [events(:one), events(:three)],
   	 "Could not find user events"
   	assert_not usr.events == [events(:three)]
+  end
+
+  test "get future events" do
+  	usr = users(:two)
+  	assert usr.get_future_events == [events(:two)],
+  	 "did not find correct events"
   end
 
   test "saves only valid email" do
