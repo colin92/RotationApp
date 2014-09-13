@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  first_name: Colin
+  last_name: Meret
+  email: cvm@andrew.cmu.edu
+  password: asdasd
+
+two:
+  id: 2
+  first_name: Rob
+  last_name: Schneider
+  email: colinm92@yahoo.com
+  password: asd123
+
+three:
+  id: 3
+  first_name: bob
+  last_name: Schneizer
+  email: colinm992@yahoo.com
+  password: asd123k

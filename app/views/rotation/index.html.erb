@@ -1,0 +1,37 @@
+<h1>All Rotations Users</h1>
+
+<table class='table'>
+	<thead>
+			<td>ID</td>
+			<td>Owner</td>
+			<td>Name</td>
+			<td>Description</td>
+			<td>Timeframe</td>
+			<td></td>
+	</thead>
+	<tbody>
+		<% @rotations.each do |r| %>
+			<tr 
+			data-toggle='collapse' 
+			data-parent='.table' 
+			href='.members<%= r.id %>'
+			class='bg-info'>
+				<td><%= r.id %></td>
+				<td><%= r.owner.name %></td>
+				<td><%= r.name %></td>
+				<td><%= r.description %></td>
+				<td><%= r.timeframe %></td>
+			</tr>			
+			<% puts r.members %>
+			<% r.members.each do |e| %>
+				<tr class='panel-collapse collapse in members<%= r.id %>'>
+					<td><%= e.id %></td>
+					<td><%= e.name %></td>
+					<td></td>
+					<td><%= e.email %></td>
+					<td></td>
+				</tr>	
+			<% end %>
+		<% end %>
+	</tbody>
+</table>

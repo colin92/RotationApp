@@ -1,0 +1,30 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  user_id: 1
+  timeframe: day
+  description: whose turn to do the dishes 
+  name: Dishes
+
+two:
+  id: 2
+  user_id: 2
+  timeframe: week
+  description: whose turn to clean the bathroom
+  name: Bathroom
+
+three:
+  id: 3
+  user_id: 99
+  timeframe: week
+  description: whose turn to clean the bathroom
+  name: Bathroom
+
+four:
+  id: 4
+  user_id: 1
+  timeframe: day
+  description: deploy code
+  name: Deployment
+

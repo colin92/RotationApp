@@ -1,0 +1,48 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  user_id: 1
+  rotation_id: 1
+  instance_count: 0
+
+two:
+  id: 2
+  user_id: 1
+  rotation_id: 2
+  instance_count: 0
+
+three:
+  id: 3
+  user_id: 2
+  rotation_id: 1
+  instance_count: 0
+
+four:
+  id: 4
+  user_id: 2
+  rotation_id: 2
+  instance_count: 0
+
+five:
+  id: 5
+  user_id: 3
+  rotation_id: 2
+  instance_count: 0
+
+six:
+  id: 6
+  user_id: 2
+  rotation_id: 3
+  instance_count: 0
+
+<% 4.times do |i| %>
+rm_<%= i %>:
+  id: <%= 7+i %>
+  user_id: <%= i+3 %>
+  rotation_id: 4
+  instance_count: 0
+<% end %>
+
+
+

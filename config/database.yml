@@ -19,7 +19,8 @@ development:
   encoding: unicode
   database: rotationapp_development
   pool: 5
-  username: rotationapp
+  host: localhost
+  username: colinmeret
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +49,7 @@ test:
   encoding: unicode
   database: rotationapp_test
   pool: 5
-  username: rotationapp
+  username: colinmeret
   password:
 
 production:
