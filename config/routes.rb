@@ -2,7 +2,7 @@ Rotationapp::Application.routes.draw do
   devise_for :users, controller: "rotations"
   root 'rotation#index'
   get 'events' => "rotation#events"
-  # get 'user/', redirect_to(root_path)
+  get 'sign_out' => 'rotation#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
