@@ -38,8 +38,8 @@ end
 gem 'simple_form'
 
 # Should I use Devise Yet? CanCan?
-# gem 'devise'
-# gem 'cancan'
+gem 'devise'
+gem 'cancancan', '~> 1.9'
 
 
 # Use ActiveModel has_secure_password

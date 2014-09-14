@@ -10,19 +10,22 @@ User.new(
 	first_name: "Colin", 
 	last_name: "Meret",
 	email: "cvm@andrew.cmu.edu",
-	password: "asdads"
+	password: "asdadssi",
+	password_confirmation: "asdadssi"
 	).save
 User.new(
 	first_name: "John", 
 	last_name: "Jackson",
 	email: "leaf@andrew.cmu.edu",
-	password: "asdads"
+	password: "asdadssi",
+	password_confirmation: "asdadssi"
 	).save
 User.new(
 	first_name: "Groot", 
 	last_name: "Tree",
 	email: "tree@andrew.cmu.edu",
-	password: "asdads"
+	password: "asdadssi",
+	password_confirmation: "asdadssi"
 	).save
 
 
@@ -61,6 +64,5 @@ User.new(
 	rotation_id: i+1,
 	instance_count: 0)
 end
-
 
 puts Rotation.all.first.create_week_schedule
