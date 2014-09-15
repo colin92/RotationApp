@@ -1,8 +1,11 @@
 Rotationapp::Application.routes.draw do
-  devise_for :users, controller: "rotations"
+  devise_for :users, controllers: { 
+    omniauth_callbacks: "omniauth_callbacks" }
+  devise_scope :user do 
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
   root 'rotation#index'
   get 'events' => "rotation#events"
-  get 'sign_out' => 'rotation#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

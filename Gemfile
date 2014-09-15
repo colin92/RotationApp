@@ -40,7 +40,8 @@ gem 'simple_form'
 # Should I use Devise Yet? CanCan?
 gem 'devise'
 gem 'cancancan', '~> 1.9'
-
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

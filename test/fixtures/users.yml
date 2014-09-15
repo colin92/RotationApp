@@ -20,3 +20,10 @@ three:
   last_name: Schneizer
   email: colinm992@yahoo.com
   password: asd123k
+
+four:
+  id: 4
+  first_name: abigail
+  last_name: Schnitzen
+  email: aschnitzen@yahoo.com
+  password: asd123k

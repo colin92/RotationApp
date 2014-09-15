@@ -16,7 +16,7 @@ two:
 
 three:
   id: 3
-  user_id: 99
+  user_id: 4
   timeframe: week
   description: whose turn to clean the bathroom
   name: Bathroom

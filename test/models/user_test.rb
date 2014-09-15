@@ -32,7 +32,7 @@ class UserTest < ActiveSupport::TestCase
   		first_name: "Cheese",
   		last_name: "Head",
   		email: "",
-  		password: "helpmey")
+  		password: "helpmeyy")
   	assert_not usr.save, "saved with blank email"
   	usr.email = "d"
   	assert_not usr.save, "saved with invalid email: d"
@@ -40,7 +40,7 @@ class UserTest < ActiveSupport::TestCase
   	assert_not usr.save, "saved with invalid email: d@."
   	usr.email = "d@ff.f"
   	assert_not usr.save, "saved with invalid email: d@ff.f"
-  	usr.email = "d@ff.com"
+  	usr.email = "isvalidemail@validemail.com"
   	assert usr.save, "did not save valid email"
   end
 
